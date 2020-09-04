@@ -27,14 +27,7 @@ end
 
 def self.find_by_name(title)
   find = ""
-  @@all.each do |song|
-    if song.name == title
-      find = song
-  else
-    find = false
-  end
-  end
-  return find
+  @@all.include?(title) ? return true : return false;
 end
 
   def save
