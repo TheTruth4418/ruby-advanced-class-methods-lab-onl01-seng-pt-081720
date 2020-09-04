@@ -44,6 +44,9 @@ end
 
 def self.new_from_filename(file)
   a = file.split(" - ")
+  artist_name = a[0]
+  song_name = a[1].gsub(".mp3","")
+  
   binding.pry
 end
 
