@@ -43,7 +43,8 @@ def self.alphabetical
 end
 
 def self.new_from_filename(file)
-  self.all.split(" - ")
+  a = self.all.split(" - ")
+  binding.pry
 end
 
   def save
