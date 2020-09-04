@@ -27,7 +27,7 @@ end
 
 def self.find_by_name(title)
   find = ""
-  self.all.name.include?(title) ? true : false
+  self.all.include?(title) ? true : false
 end
 
   def save
