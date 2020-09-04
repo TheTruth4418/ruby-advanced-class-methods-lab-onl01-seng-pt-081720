@@ -33,6 +33,7 @@ def self.find_by_name(title)
   else
     find = false
   end
+  end
   return find
 end
 
