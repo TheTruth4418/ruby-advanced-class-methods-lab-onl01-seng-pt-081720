@@ -47,7 +47,9 @@ def self.new_from_filename(file)
   artist_name = a[0]
   song_name = a[1].gsub(".mp3","")
 
-  binding.pry
+  song = self.new
+  song.name = song_name
+  song.artist_name = artist_name
 end
 
   def save
