@@ -64,6 +64,9 @@ def self.create_from_filename(file)
   song
 end
 
+def self.destroy_all
+  self.class.all.clear
+end
   def save
     self.class.all << self
   end
