@@ -26,8 +26,7 @@ def self.create_by_name(title)
 end
 
 def self.find_by_name(title)
-  find = ""
-  self.all.include?(title) ? true : false
+  self.all.find{|song| song.name == title}
 end
 
   def save
