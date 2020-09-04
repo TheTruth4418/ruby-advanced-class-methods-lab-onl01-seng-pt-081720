@@ -20,9 +20,10 @@ def self.new_by_name(title)
 end
 
 def self.create_by_name(title)
-  binding.pry
-  self.name = title
-  self.save
+
+  song = self.create
+  song.name = title
+  
 end
 
   def save
