@@ -26,7 +26,10 @@ def self.create_by_name(title)
 end
 
 def find_by_name(title)
-
+  @@all.each do |song|
+    if song.name == title
+      song
+  end
 end
 
   def save
