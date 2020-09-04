@@ -25,6 +25,10 @@ def self.create_by_name(title)
   song
 end
 
+def find_by_name(title)
+  
+end
+
   def save
     self.class.all << self
   end
