@@ -30,7 +30,8 @@ def self.find_by_name(title)
   @@all.each do |song|
     if song.name == title
       find = song
-    end
+  else
+    find = false
   end
   return find
 end
