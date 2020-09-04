@@ -19,9 +19,8 @@ def self.new_by_name(title)
 end
 
 def self.create_by_name(title)
-  song = self.new
-  song.name = title
-  @@all << title
+  self.name = title
+  self.save
 end
 
   def save
