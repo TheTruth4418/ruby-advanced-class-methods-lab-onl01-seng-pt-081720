@@ -32,6 +32,7 @@ def self.find_by_name(title)
       find = song
     end
   end
+  return find
 end
 
   def save
