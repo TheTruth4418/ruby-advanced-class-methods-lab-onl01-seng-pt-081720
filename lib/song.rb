@@ -29,6 +29,7 @@ def find_by_name(title)
   @@all.each do |song|
     if song.name == title
       song
+    end
   end
 end
 
