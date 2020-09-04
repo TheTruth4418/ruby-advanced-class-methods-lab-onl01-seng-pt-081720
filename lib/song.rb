@@ -65,7 +65,7 @@ def self.create_from_filename(file)
 end
 
 def self.destroy_all
-  self.class.all.clear
+  self.all.clear
 end
   def save
     self.class.all << self
